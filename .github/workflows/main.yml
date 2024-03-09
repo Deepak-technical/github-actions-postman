@@ -3,6 +3,8 @@ name: GitHub Actions Events Demo
 on:
   repository_dispatch:
     types: [test_result]
+  pull_request:
+    types: [opened]
 
 jobs:
   Get-Environment-Variables:
